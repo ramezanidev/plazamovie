@@ -3,6 +3,7 @@
     <AppHeader />
     <AppSearch />
     <AppSlider />
+    <AppSubscription />
   </div>
 </template>
 
@@ -11,13 +12,15 @@ import Vue from 'vue'
 import AppHeader from '@/components/app-header.vue'
 import AppSearch from '~/components/app-search.vue'
 import AppSlider from '~/components/app-slider.vue'
+import AppSubscription from '~/components/app-subscription.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     AppHeader,
     AppSearch,
-    AppSlider
+    AppSlider,
+    AppSubscription
   }
 })
 </script>
