@@ -4,6 +4,7 @@
     <AppSearch />
     <AppSlider />
     <AppSubscription />
+    <AppNewest />
     <AppFooter />
   </div>
 </template>
@@ -15,6 +16,7 @@ import AppSearch from '~/components/app-search.vue'
 import AppSlider from '~/components/app-slider.vue'
 import AppSubscription from '~/components/app-subscription.vue'
 import AppFooter from '~/components/app-footer.vue'
+import AppNewest from '~/components/app-newest.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -23,7 +25,8 @@ export default Vue.extend({
     AppSearch,
     AppSlider,
     AppSubscription,
-    AppFooter
+    AppFooter,
+    AppNewest
   }
 })
 </script>
