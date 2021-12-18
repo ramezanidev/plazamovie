@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
+    "global": "^4.4.0",
     "nuxt": "^2.15.7",
+    "vercel": "^23.1.2",
     "vue-slick-carousel": "^1.0.6",
     "vue-slick-carousel-rtl": "^1.0.8"
   },
@@ -26,6 +28,7 @@
     "@nuxtjs/tailwindcss": "^4.2.0",
     "@typescript-eslint/parser": "^5.5.0",
     "@vue/test-utils": "^1.2.1",
+    "@vueuse/nuxt": "^7.4.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.5",

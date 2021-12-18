@@ -5,9 +5,9 @@
         class="bg-brand-3 text-white font-bold right-0 top-1/2 absolute transform -translate-y-1/2 pl-4 text-lg select-none"
       >اشتراک ویژه</span>
     </div>
-    <div class="w-full pt-12 flex items-center justify-center gap-6">
+    <div class="w-full pt-12 flex items-center justify-center gap-8">
       <!-- silver -->
-      <div class="border border-brand-1 border-opacity-50 relative overflow h-64 w-48 rounded">
+      <div class="border border-brand-1 border-opacity-50 relative overflow w-64 h-80 rounded">
         <div class="bg-gradient-to-b from-brand-4 absolute inset-0 opacity-40" />
         <div class="relative inset-0 h-full w-full p-4">
           <h4 class="text-white font-bold w-full text-center text-lg">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <!-- gold -->
-      <div style="box-shadow: 0px 0px 20px 0px #e23e5785;" class="border border-brand-1 border-opacity-70 relative overflow h-72 w-52 rounded">
+      <div style="box-shadow: 0px 0px 20px 0px #e23e5785;" class="border border-brand-1 border-opacity-70 relative overflow h-96 w-72 rounded">
         <div class="bg-gradient-to-b from-brand-4 absolute inset-0 opacity-40" />
         <div class="relative inset-0 h-full w-full p-4">
           <h4 class="text-yellow-500 font-bold w-full text-center text-lg">
@@ -39,7 +39,7 @@
         </div>
       </div>
       <!-- Bronze -->
-      <div class="border border-brand-1 border-opacity-50 relative overflow h-64 w-48 rounded">
+      <div class="border border-brand-1 border-opacity-50 relative overflow w-64 h-80 rounded">
         <div class="bg-gradient-to-b from-brand-4 absolute inset-0 opacity-40" />
         <div class="relative inset-0 h-full w-full p-4">
           <h4 class="text-white font-bold w-full text-center text-lg">

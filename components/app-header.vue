@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full h-screen bg bg-cover bg-center">
+  <div class="flex flex-col w-full bg bg-cover bg-center" style="height: 600px">
     <div class="container mx-auto">
       <header class="w-full flex justify-between py-6">
         <div class="flex">
@@ -35,7 +35,7 @@
           </button>
         </div>
       </header>
-      <div class="mt-36">
+      <div class="mt-20">
         <h2 class="text-brand-1 font-bold text-3xl">
           به بزرگ ترین مرجع فیلم و سریال <br>خوش آمدید
         </h2>
