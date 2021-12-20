@@ -4,8 +4,9 @@
     <AppSearch />
     <AppSlider />
     <AppBest />
-    <AppSubscription />
     <AppNewest />
+    <AppSubscription />
+    <AppNews />
     <AppFooter />
   </div>
 </template>
@@ -19,6 +20,7 @@ import AppBest from '~/components/app-best.vue'
 import AppSubscription from '~/components/app-subscription.vue'
 import AppFooter from '~/components/app-footer.vue'
 import AppNewest from '~/components/app-newest.vue'
+import AppNews from '~/components/app-news.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -29,7 +31,8 @@ export default Vue.extend({
     AppBest,
     AppSubscription,
     AppFooter,
-    AppNewest
+    AppNewest,
+    AppNews
   }
 })
 </script>
