@@ -1,5 +1,7 @@
 @charset 'UTF-8';
+@import url("~/assets/fonts/fontiran.css");
 
 body {
-    @apply bg-brand-3
+    font-family: iranyekan;
+    @apply bg-brand-3;
 }

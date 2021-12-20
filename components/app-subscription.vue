@@ -49,7 +49,7 @@
             <li>دانلود 5 تا فیلم سینمایی</li>
             <li>15 روز حق استفاده از اشتراک</li>
           </ul>
-          <button class="absolute bottom-0 left-0 right-0 w-full h-12 rounded bg-brand-1 hover:bg-brand-4 transition-all text-white font-bold">
+          <button class="absolute bottom-0 left-0 right-0 w-full h-12 rounded-b bg-brand-1 hover:bg-brand-4 transition-all text-white font-bold">
             خرید + جزئیات بیشتر
           </button>
         </div>

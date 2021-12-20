@@ -3,6 +3,7 @@
     <AppHeader />
     <AppSearch />
     <AppSlider />
+    <AppBest />
     <AppSubscription />
     <AppNewest />
     <AppFooter />
@@ -14,6 +15,7 @@ import Vue from 'vue'
 import AppHeader from '@/components/app-header.vue'
 import AppSearch from '~/components/app-search.vue'
 import AppSlider from '~/components/app-slider.vue'
+import AppBest from '~/components/app-best.vue'
 import AppSubscription from '~/components/app-subscription.vue'
 import AppFooter from '~/components/app-footer.vue'
 import AppNewest from '~/components/app-newest.vue'
@@ -24,6 +26,7 @@ export default Vue.extend({
     AppHeader,
     AppSearch,
     AppSlider,
+    AppBest,
     AppSubscription,
     AppFooter,
     AppNewest
