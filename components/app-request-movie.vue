@@ -2,7 +2,7 @@
   <div class="container mx-auto my-20">
     <div class="w-full h-144 relative">
       <div class="inset-0 w-full h-full absolute rounded overflow-hidden">
-        <img class="w-full h-full object-cover object-center" src="/wp8970877-hollywood-movies-2021-wallpapers.jpg">
+        <img class="w-full h-full object-cover object-left" src="/movie.png">
       </div>
       <div class="relative z-10 w-full h-full pt-6 pr-4">
         <div class="w-80 h-auto bg-brand-2 rounded">

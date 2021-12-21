@@ -3,8 +3,8 @@
     <div class="container mx-auto">
       <header class="w-full flex justify-between py-6">
         <div class="flex">
-          <img class="w-32" src="/4c139ed6401aa7a10912407324ee4a12.jpg" alt="">
-          <nav class="navbar flex items-center">
+          <img class="w-20" src="/logo.svg" draggable="false">
+          <nav class="navbar flex items-center mr-8">
             <ul class="flex space-s-6 font-bold text-lg">
               <li v-for="nav in navBar" :key="nav.to" class="text-white hover:text-brand-1 transition-all whitespace-nowrap">
                 <nuxt-link :to="nav.to" v-text="nav.name" />

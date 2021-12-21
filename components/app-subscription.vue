@@ -30,7 +30,9 @@
             اشتراک طلایی
           </h4>
           <ul class="mt-4 text-gray-300 text-sm px-2 space-y-2">
-            <li>دانلود 5 تا فیلم سینمایی</li>
+            <li>
+              دانلود 5 تا فیلم سینمایی
+            </li>
             <li>15 روز حق استفاده از اشتراک</li>
           </ul>
           <button class="absolute bottom-0 left-0 right-0 w-full h-12 rounded bg-brand-1 hover:bg-brand-4 transition-all text-white font-bold">
@@ -70,4 +72,12 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+ul {
+  list-style-image: url('/check.svg');
+  @apply px-5;
+  ::marker {
+    font-size: 35px;
+  }
+}
+</style>
