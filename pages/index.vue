@@ -7,6 +7,7 @@
     <AppNewest />
     <AppSubscription />
     <AppNews />
+    <AppRequestMovie />
     <AppFooter />
   </div>
 </template>
@@ -21,6 +22,7 @@ import AppSubscription from '~/components/app-subscription.vue'
 import AppFooter from '~/components/app-footer.vue'
 import AppNewest from '~/components/app-newest.vue'
 import AppNews from '~/components/app-news.vue'
+import AppRequestMovie from '~/components/app-request-movie.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -32,7 +34,8 @@ export default Vue.extend({
     AppSubscription,
     AppFooter,
     AppNewest,
-    AppNews
+    AppNews,
+    AppRequestMovie
   }
 })
 </script>
