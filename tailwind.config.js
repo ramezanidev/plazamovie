@@ -3,6 +3,17 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        92: '23rem',
+        112: '28rem',
+        116: '29rem',
+        124: '31rem',
+        128: '32rem',
+        132: '33rem',
+        136: '34rem',
+        140: '35rem',
+        144: '36rem'
+      },
       colors: {
         brand: {
           1: '#e23e57',

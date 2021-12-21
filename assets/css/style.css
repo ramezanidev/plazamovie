@@ -5,3 +5,8 @@ body {
     font-family: iranyekan;
     @apply bg-brand-3;
 }
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
