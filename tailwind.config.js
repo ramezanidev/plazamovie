@@ -1,3 +1,5 @@
+const useVar = require('./utility/tailwindcss/useVar')
+
 module.exports = {
   purge: ['./components/**/*.{vue,js}', './assets/**/*.{css,scss,sass}', './layouts/**/*.vue', './pages/**/*.vue', './plugins/**/*.{js,ts}', './nuxt.config.{js,ts}'],
   darkMode: 'class', // or 'media' or 'class'
@@ -16,10 +18,10 @@ module.exports = {
       },
       colors: {
         brand: {
-          1: '#e23e57',
-          2: '#522546',
-          3: '#2f1b3d',
-          4: '#88304e'
+          1: 'rgb(var(--color-brand-1))',
+          2: 'rgb(var(--color-brand-2))',
+          3: 'rgb(var(--color-brand-3))',
+          4: 'rgb(var(--color-brand-4))'
         }
       },
       container: {
@@ -45,5 +47,5 @@ module.exports = {
       translate: ['group-hover']
     }
   },
-  plugins: [require('tailwindcss-rtl')]
+  plugins: [require('tailwindcss-rtl'), useVar()]
 }

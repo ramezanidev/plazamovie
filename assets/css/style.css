@@ -2,11 +2,28 @@
 @import url("~/assets/fonts/fontiran.css");
 
 body {
-    font-family: iranyekan;
-    @apply bg-brand-3;
+  font-family: iranyekan;
+  @apply bg-brand-3;
 }
 
 .scroll-hidden::-webkit-scrollbar {
-    display: none;
-    width: 0;
+  display: none;
+  width: 0;
+}
+html {
+    --color-brand-1: 226, 62, 87;
+    --color-brand-2: 82, 37, 70;
+    --color-brand-3: 47, 27, 61;
+    --color-brand-4: 136, 48, 78;
+}
+.dark {
+  --color-brand-1: 226, 62, 87;
+  --color-brand-2: 82, 37, 70;
+  --color-brand-3: 47, 27, 61;
+  --color-brand-4: 136, 48, 78;
+}
+
+input[type=checkbox]{
+  @apply w-3.5 h-3.5 flex rounded transition-all;
+  accent-color: theme("colors.brand.1");
 }

@@ -8,7 +8,6 @@
     <AppSubscription />
     <AppNews />
     <AppRequestMovie />
-    <AppFooter />
   </div>
 </template>
 
@@ -19,7 +18,6 @@ import AppSearch from '~/components/app-search.vue'
 import AppSlider from '~/components/app-slider.vue'
 import AppBest from '~/components/app-best.vue'
 import AppSubscription from '~/components/app-subscription.vue'
-import AppFooter from '~/components/app-footer.vue'
 import AppNewest from '~/components/app-newest.vue'
 import AppNews from '~/components/app-news.vue'
 import AppRequestMovie from '~/components/app-request-movie.vue'
@@ -32,7 +30,6 @@ export default Vue.extend({
     AppSlider,
     AppBest,
     AppSubscription,
-    AppFooter,
     AppNewest,
     AppNews,
     AppRequestMovie
@@ -41,7 +38,5 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.bg {
-  background-image: url(/940348.jpg);
-}
+
 </style>
