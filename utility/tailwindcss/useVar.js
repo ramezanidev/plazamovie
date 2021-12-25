@@ -1,9 +1,9 @@
-const plugin = require("tailwindcss/plugin");
+const plugin = require('tailwindcss/plugin')
 
-module.exports = function useVar() {
+module.exports = function useVar () {
   return plugin(({ addUtilities, theme, variants }) => {
     const fn = (prefix, key, prop, opacity) => {
-      const t = theme(prop);
+      const t = theme(prop)
 
       addUtilities(Object.keys(t)
         .reduce((_o, _k) => ({
@@ -20,11 +20,11 @@ module.exports = function useVar() {
         }), {}), {
         respectImportant: false,
         variants: variants(prop)
-      });
+      })
     }
 
     // add more utils here...
-    fn('bg', 'background-color', 'backgroundColor', '--tw-bg-opacity');
-    fn('text', 'color', 'textColor', '--tw-text-opacity');
-  });
-};
+    fn('bg', 'background-color', 'backgroundColor', '--tw-bg-opacity')
+    fn('text', 'color', 'textColor', '--tw-text-opacity')
+  })
+}
