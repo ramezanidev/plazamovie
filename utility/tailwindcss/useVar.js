@@ -13,7 +13,6 @@ module.exports = function useVar () {
             .reduce((o, k) => ({
               ...o,
               [`.${prefix}-${_k}-${k}`]: {
-                [opacity]: '1',
                 [key]: t[_k][k].replace(/^rgb\((.*)\)$/i, `rgba($1, var(${opacity})) !important`)
               }
             }), {})

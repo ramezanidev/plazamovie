@@ -27,3 +27,20 @@ input[type=checkbox]{
   @apply w-3.5 h-3.5 flex rounded transition-all;
   accent-color: theme("colors.brand.1");
 }
+
+::selection {
+  @apply bg-brand-3 text-brand-1;
+}
+
+.nuxt-progress {
+  @apply bg-brand-1;
+}
+
+.form-input {
+  @apply bg-brand-3 rounded py-2 px-4 text-white outline-none;
+  caret-color: theme("colors.brand.1")  
+}
+
+.form-label {
+  @apply text-white mb-2 text-sm flex items-center;  
+}
