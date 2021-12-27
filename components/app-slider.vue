@@ -34,7 +34,6 @@
 import Vue from 'vue'
 // @ts-ignore
 import VueSlickCarousel from 'vue-slick-carousel-rtl'
-import 'vue-slick-carousel-rtl/dist/vue-slick-carousel-rtl.css'
 // optional style for arrows & dots
 // import 'vue-slick-carousel-rtl/dist/vue-slick-carousel-theme.css'
 
@@ -110,6 +109,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import url('vue-slick-carousel-rtl/dist/vue-slick-carousel-rtl.css');
+
 .slick-slide {
   @apply grid grid-cols-4 gap-4 #{!important};
 }

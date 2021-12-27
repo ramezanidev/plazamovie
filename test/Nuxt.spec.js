@@ -7,7 +7,6 @@ describe('Nuxt', () => {
     const wrapper = mount(Home, {
       stubs: {
         NuxtLink: true,
-        AppHeader: true,
       },
     });
 

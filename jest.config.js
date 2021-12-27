@@ -14,5 +14,6 @@ module.exports = {
   collectCoverage: true,
   roots: ['test/'],
   collectCoverageFrom: ['<rootDir>/components/**/*.vue', '<rootDir>/pages/**/*.vue'],
-  testEnvironment: 'jsdom'
+  testEnvironment: 'jsdom',
+  setupFiles: ['./jest.setup.js']
 }
