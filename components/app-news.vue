@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto my-20">
-    <div class="w-full h-1 bg-opacity-60 bg-brand-1 relative">
+  <div class="container mx-auto" :class="{'my-20' : !hideTitle}">
+    <div v-if="!hideTitle" class="w-full h-1 bg-opacity-60 bg-brand-1 relative">
       <span
         class="bg-brand-3 text-white font-bold right-0 top-1/2 absolute transform -translate-y-1/2 pl-4 text-lg select-none"
       >اخبار ها</span>
     </div>
-    <div class="w-full pt-12 grid grid-cols-10 gap-4">
+    <div :class="{'pt-12' : !hideTitle}" class="w-full grid grid-cols-10 gap-4">
       <div class="col-start-1 col-end-5 h-144 flex-col flex gap-4">
         <div class="grid grid-cols-3 h-16">
           <button v-for="(txt, index) in ['جدیدترین ها', 'محبوبترین ها', 'قدیمی ترین ها']" :key="txt" class="text-sm text-white whitespace-nowrap overflow-ellipsis w-full overflow-hidden px-1 py-4 rounded" :class="{'bg-brand-4' : index === 0}">
@@ -63,6 +63,12 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'AppNews',
   components: {},
+  props: {
+    hideTitle: {
+      type: Boolean,
+      default: false
+    }
+  },
   data () {
     return {}
   }

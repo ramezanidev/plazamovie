@@ -3,6 +3,7 @@ const useVar = require('./utility/tailwindcss/useVar')
 module.exports = {
   purge: ['./components/**/*.{vue,js}', './assets/**/*.{css,scss,sass}', './layouts/**/*.vue', './pages/**/*.vue', './plugins/**/*.{js,ts}', './nuxt.config.{js,ts}'],
   darkMode: 'class', // or 'media' or 'class'
+  mode: 'jit',
   theme: {
     extend: {
       spacing: {
