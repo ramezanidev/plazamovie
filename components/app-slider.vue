@@ -2,7 +2,19 @@
   <div class="container mx-auto my-20">
     <div class="w-full h-1 bg-opacity-60 bg-brand-1 relative">
       <span
-        class="bg-brand-3 text-white font-bold right-0 top-1/2 absolute transform -translate-y-1/2 pl-4 text-lg select-none"
+        class="
+          bg-brand-3
+          text-white
+          font-bold
+          right-0
+          top-1/2
+          absolute
+          transform
+          -translate-y-1/2
+          pl-4
+          text-lg
+          select-none
+        "
       >همه سبک ها</span>
     </div>
     <VueSlickCarousel v-bind="settings" class="overflow-x-hidden mt-8">
@@ -11,7 +23,16 @@
         :key="movie.name"
         draggable="false"
         :to="movie.href"
-        class="w-full h-80 rounded bg-brand-2 overflow-hidden relative group cursor-pointer"
+        class="
+          w-full
+          h-80
+          rounded
+          bg-brand-2
+          overflow-hidden
+          relative
+          group
+          cursor-pointer
+        "
       >
         <img
           draggable="false"
@@ -19,7 +40,27 @@
           class="w-full relative w h-full object-cover object-center"
         >
         <div
-          class="absolute bottom-0 font-bold text-white left-0 right-0 h-28 bg-brand-4 bg-opacity-80 backdrop-filter backdrop-blur py-4 px-2 md:px-4 transform translate-y-28 opacity-0 group-hover:opacity-100 duration-500 group-hover:translate-y-0 transition-all"
+          class="
+            absolute
+            bottom-0
+            font-bold
+            text-white
+            left-0
+            right-0
+            h-28
+            bg-brand-4 bg-opacity-80
+            backdrop-filter backdrop-blur
+            py-4
+            px-2
+            md:px-4
+            transform
+            translate-y-28
+            opacity-0
+            group-hover:opacity-100
+            duration-500
+            group-hover:translate-y-0
+            transition-all
+          "
         >
           <p>نام اثر:‌ {{ movie.name }}</p>
           <p>نویسنده:‌ {{ movie.writer }}</p>
@@ -48,7 +89,15 @@ export default Vue.extend({
         arrows: false,
         dots: true,
         rows: 4,
-        rtl: true
+        rtl: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              rows: 1
+            }
+          }
+        ]
       },
       data: [
         {
@@ -109,14 +158,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import url('vue-slick-carousel-rtl/dist/vue-slick-carousel-rtl.css');
+@import url("vue-slick-carousel-rtl/dist/vue-slick-carousel-rtl.css");
 
 .slick-slide {
-  @apply grid grid-cols-4 gap-4 #{!important};
+  @apply grid grid-cols-1 md:grid-cols-4 gap-4 #{!important};
 }
 
 .slick-track > * {
-  @apply px-0.5
+  @apply px-0.5;
 }
 .slick-dots {
   @apply mt-4 p-0 w-full block text-center list-none;

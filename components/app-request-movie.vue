@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto my-20">
+  <div class="container mx-auto my-20 md:mb-auto mb-96">
     <div class="w-full h-144 relative">
       <div class="inset-0 w-full h-full absolute rounded overflow-hidden">
         <img class="w-full h-full object-cover object-left" src="/movie.png">
       </div>
-      <div class="relative z-10 w-full h-full pt-6 pr-4">
-        <div class="w-80 h-auto bg-brand-2 rounded">
+      <div class="relative z-10 w-full h-full md:pt-6 pt-96 pr-4 pl-4 md:pl-0">
+        <div class="md:w-80 w-full h-auto bg-brand-2 rounded">
           <div class="h-auto p-5">
             <h4 class="text-white text-center text-xl font-extrabold">
               چه فیلمی رو دوست داشتی که تو سایتم نبود؟

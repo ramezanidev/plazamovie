@@ -3,7 +3,7 @@
     <div class="bg-brand-3 w-full h-24 absolute top-12 inset-x-0 transform -rotate-3" />
     <article class="relative z-10 pt-14">
       <section class="w-full container mx-auto">
-        <div class="w-full grid grid-cols-3 gap-6">
+        <div class="w-full grid md:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-rows-1 gap-6">
           <div class="w-full border-8 h-44 lg:h-52 border-brand-4 rounded">
             <img src="/5872151.png" class="w-full h-full object-cover object-center" draggable="false">
           </div>
@@ -31,7 +31,7 @@
               type="text"
             >
           </form>
-          <div class="grid grid-cols-5 gap-4 mt-4 select-none">
+          <div class="grid grid-cols-3 md:grid-cols-5 gap-4 mt-4 select-none">
             <button class="w-full h-10 text-white border border-brand-2 rounded hover:bg-brand-3 hover:bg-opacity-70 transition bg-brand-3">
               همه
             </button>

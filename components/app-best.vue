@@ -121,7 +121,15 @@ export default Vue.extend({
         arrows: false,
         dots: true,
         rows: 3,
-        rtl: true
+        rtl: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              rows: 1
+            }
+          }
+        ]
       },
       data: [
         {
@@ -185,6 +193,6 @@ export default Vue.extend({
 @import url("vue-slick-carousel-rtl/dist/vue-slick-carousel-rtl.css");
 
 .app-best .slick-slide {
-  @apply grid-cols-3 #{!important};
+  @apply md:grid-cols-3 grid-cols-1 #{!important};
 }
 </style>

@@ -4,7 +4,7 @@
       <header class="w-full flex justify-between py-6">
         <div class="flex">
           <img class="w-20" src="/logo.svg" draggable="false">
-          <nav class="navbar flex items-center mr-8">
+          <nav class="navbar md:flex items-center mr-8 hidden">
             <ul class="flex space-s-6 font-bold text-lg">
               <li v-for="nav in navBar" :key="nav.to" class="text-white hover:text-brand-1 transition-all whitespace-nowrap">
                 <nuxt-link :to="nav.to" v-text="nav.name" />

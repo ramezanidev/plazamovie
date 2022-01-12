@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container mx-auto mt-36 grid grid-cols-3 gap-4 mb-16">
+    <div class="container mx-auto mt-36 grid md:grid-cols-3 grid-cols-1 gap-4 mb-16">
       <div>
         <h4 class="text-white font-bold text-lg">
           درباره ما

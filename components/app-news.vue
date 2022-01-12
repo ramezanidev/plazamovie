@@ -5,8 +5,8 @@
         class="bg-brand-3 text-white font-bold right-0 top-1/2 absolute transform -translate-y-1/2 pl-4 text-lg select-none"
       >اخبار ها</span>
     </div>
-    <div :class="{'pt-12' : !hideTitle}" class="w-full grid grid-cols-10 gap-4">
-      <div class="col-start-1 col-end-5 h-144 flex-col flex gap-4">
+    <div :class="{'pt-12' : !hideTitle}" class="w-full grid md:grid-rows-1 grid-rows-2 grid-cols-10 gap-4">
+      <div class="col-start-1 col-end-11 md:col-end-5 h-144 flex-col flex gap-4">
         <div class="grid grid-cols-3 h-16">
           <button v-for="(txt, index) in ['جدیدترین ها', 'محبوبترین ها', 'قدیمی ترین ها']" :key="txt" class="text-sm text-white whitespace-nowrap overflow-ellipsis w-full overflow-hidden px-1 py-4 rounded" :class="{'bg-brand-4' : index === 0}">
             {{ txt }}
@@ -33,7 +33,7 @@
         </button>
       </div>
 
-      <div class="col-start-5 h-144 col-end-11 flex flex-col rounded overflow-hidden relative" draggable="false">
+      <div class="col-start-1 md:col-start-5  h-144 col-end-11 flex flex-col rounded overflow-hidden relative" draggable="false">
         <div class="h-72 relative">
           <img
             draggable="false"
