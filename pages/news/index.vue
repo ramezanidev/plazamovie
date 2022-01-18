@@ -4,7 +4,7 @@
       اخبار ها
     </h2>
     <AppNews class="mt-6" :hide-title="true" />
-    <div class="grid h-116 grid-cols-2 container mx-auto my-8 gap-4">
+    <div class="grid md:h-116 grid-cols-1 md:grid-cols-2 container mx-auto my-8 gap-4">
       <div class="grid gap-4 grid-cols-2 grid-rows-2">
         <div class="relative group overflow-hidden">
           <img
@@ -49,7 +49,7 @@
       </div>
       <div
         draggable="false"
-        class="w-full h-full relative"
+        class="w-full h-116 md:h-full relative"
       >
         <img
           draggable="false"
