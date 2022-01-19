@@ -1,12 +1,29 @@
 <template>
-  <div class="flex flex-col w-full bg-cover bg-center" :class="{bg: !showOnlyHeader}">
+  <div
+    class="flex flex-col w-full bg-cover bg-center"
+    :class="{ bg: !showOnlyHeader }"
+  >
     <div class="container mx-auto">
-      <header class="w-full flex justify-between py-6">
+      <header
+        ref="navbar"
+        class="w-full flex justify-between py-6"
+      >
         <div class="flex">
-          <img class="w-20" src="/logo.svg" draggable="false">
+          <nuxt-link to="/">
+            <img class="w-20 logo" src="/logo.svg" draggable="false">
+          </nuxt-link>
           <nav class="navbar md:flex items-center mr-8 hidden">
             <ul class="flex space-s-6 font-bold text-lg">
-              <li v-for="nav in navBar" :key="nav.to" class="text-white hover:text-brand-1 transition-all whitespace-nowrap">
+              <li
+                v-for="nav in navBar"
+                :key="nav.to"
+                class="
+                  text-white
+                  hover:text-brand-1
+                  transition-all
+                  whitespace-nowrap
+                "
+              >
                 <nuxt-link :to="nav.to" v-text="nav.name" />
               </li>
             </ul>
@@ -15,7 +32,19 @@
         <div class="flex items-center space-s-4">
           <!-- change theme -->
           <div class="bg-brand-2 w-16 h-6 rounded-full cursor-pointer">
-            <span class="flex h-8 w-8 text-white justify-center items-center bg-brand-3 rounded-full -mt-1">
+            <span
+              class="
+                flex
+                h-8
+                w-8
+                text-white
+                justify-center
+                items-center
+                bg-brand-3
+                rounded-full
+                -mt-1
+              "
+            >
               <svg style="width: 20px; height: 20px" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -25,7 +54,20 @@
             </span>
           </div>
           <!-- account -->
-          <nuxt-link to="/login" class="w-8 h-8 text-white bg-brand-1 bg-opacity-100 hover:bg-opacity-70 transition-all rounded-full flex items-center justify-center">
+          <nuxt-link
+            to="/login"
+            class="
+              w-8
+              h-8
+              text-white
+              bg-brand-1
+              transition-all
+              rounded-full
+              flex
+              items-center
+              justify-center
+            "
+          >
             <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -33,6 +75,26 @@
               />
             </svg>
           </nuxt-link>
+          <!-- menu -->
+          <button
+            class="
+              w-8
+              h-8
+              text-brand-1
+              flex
+              items-center
+              justify-center
+              cursor-pointer
+              md:hidden
+            "
+          >
+            <svg class="w-8 h-8" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+              />
+            </svg>
+          </button>
         </div>
       </header>
       <div v-if="!showOnlyHeader" class="mt-20">
@@ -40,13 +102,48 @@
           به بزرگ ترین مرجع فیلم و سریال <br>خوش آمدید
         </h2>
         <p class="text-white max-w-sm mt-8">
-          تیم ما تمام تلاششو کرده تا بهترین سریال ها و فیلم های سینمایی را به بهترین کیفیت ممکن برای شما عزیزان فراهم کند، با ما همراه باشید.
+          تیم ما تمام تلاششو کرده تا بهترین سریال ها و فیلم های سینمایی را به
+          بهترین کیفیت ممکن برای شما عزیزان فراهم کند، با ما همراه باشید.
         </p>
-        <div class="mt-12">
-          <button class="bg-brand-1 mx-2 text-white w-32 h-12 rounded font-bold">
+        <div class="mt-12 flex">
+          <nuxt-link
+            to="/subscription/golden"
+            class="
+              bg-brand-1
+              border border-brand-1
+              hover:bg-transparent
+              flex
+              justify-center
+              items-center
+              cursor-pointer
+              mx-2
+              text-white
+              w-32
+              h-12
+              rounded
+              font-bold
+            "
+          >
             اشتراک ویژه
-          </button>
-          <button class="border border-brand-1 mx-2 text-white w-32 h-12 rounded">
+          </nuxt-link>
+          <button
+            class="
+              border
+              flex
+              justify-center
+              items-center
+              cursor-pointer
+              bg-transparent
+              hover:bg-brand-1
+              transition-all
+              border-brand-1
+              mx-2
+              text-white
+              w-32
+              h-12
+              rounded
+            "
+          >
             درباره ما
           </button>
         </div>
@@ -93,7 +190,17 @@ export default Vue.extend({
         to: '/contact-us'
       }
     ]
-  })
+  }),
+  mounted () {
+    window.addEventListener('scroll', () => {
+      const el = this.$refs.navbar
+      if (screen.availHeight < scrollY) {
+        el.classList.add('navbar-fixed')
+      } else {
+        el.classList.remove('navbar-fixed')
+      }
+    })
+  }
 })
 </script>
 
@@ -107,5 +214,13 @@ export default Vue.extend({
 .bg {
   height: 600px;
   background-image: url(/940348.jpg);
+}
+
+.navbar-fixed {
+  background-color: rgba(var(--color-brand-3), var(--tw-bg-opacity)) !important;
+  @apply fixed shadow-xl px-10 py-4 z-50 top-0 inset-x-0 bg-opacity-75 backdrop-filter backdrop-blur-xl #{!important};
+  & .logo {
+    @apply w-14 #{!important};
+  }
 }
 </style>

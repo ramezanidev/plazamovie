@@ -44,3 +44,7 @@ input[type=checkbox]{
 .form-label {
   @apply text-white mb-2 text-sm flex items-center;  
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
